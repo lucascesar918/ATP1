@@ -3,8 +3,6 @@
 char* caesar_encode(char* str, size_t size, int key);
 char* caesar_decode(char* str, size_t size, int key);
 
-const int key = 5;
-
 int main()
 {
     size_t bufsize = 200;
