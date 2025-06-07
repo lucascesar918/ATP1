@@ -34,9 +34,8 @@ char* caesar_encode(char* str, size_t size, int k){
 }
 
 char* caesar_decode(char* str, size_t size, int k){
-    for(size_t c=0; c<size && str[c] != '\0'; c++){
+    for(size_t c=0; c<size && str[c] != '\0'; c++)
         str[c] -= k;
-    }
     
     return str;
 }
