@@ -14,6 +14,7 @@ int main()
   fgets(buf, bufsize, stdin);
   count_duplicates(buf);
 
+  free(buf);
   return 0;
 }
 
