@@ -9,6 +9,8 @@ int main(){
   char* buf = (char*) malloc(sizeof(char) * bufsize);
   char* pattern = (char*) malloc(sizeof(char) * bufsize);
 
+  if (!buf || !pattern) perror("Falha ao alocar memória.");
+
   printf("Digite uma palavra: ");
   fgets(buf, bufsize, stdin);
   printf("Palavra de busca: ");

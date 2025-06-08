@@ -8,6 +8,8 @@ int main(){
   char* buf = (char*)malloc(sizeof(char) * bufsize);
   char* auxbuf = (char*)malloc(sizeof(char) * bufsize);
 
+  if (!buf || !auxbuf) perror("Falha ao alocar memória.");
+
   fgets(buf, bufsize, stdin);
   substring(buf, auxbuf, 4, 9);
   printf("%s\n", auxbuf);
